@@ -7,8 +7,8 @@ const Portfolio = () => {
       <section>
         <div
           id="projects"
-          className="justify-items-center bg-gray-950 text-white pt-5 pb-7 md:pb-[60px] px-3">
-
+          className="justify-items-center bg-gray-950 text-white border-b-[1px] border-b-slate-700 pt-5 pb-7 md:pb-[60px] px-3"
+        >
           <br />
 
           <h1 className="flex justify-center font-bold">PORTFOLIO</h1>

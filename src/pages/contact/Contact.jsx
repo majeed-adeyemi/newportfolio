@@ -36,26 +36,24 @@ const Contact = () => {
       <section>
         <div
           id="contact"
-          className="bg-gray-950 text-white pt-5 md:pt-10 px-3 text-[17px]"
+          className="bg-gray-950 text-white  pt-5 md:pt-10 px-3 text-[17px]"
         >
-          <h1 className="flex justify-center font-bold">GET IN TOUCH</h1>
-          <div className="flex justify-center">
-            <h2 className="font-bold text-[25px]">
-              Contact <span className="text-blue-300">Me</span>.
-            </h2>
-          </div>
+          <h1 className="text-center font-bold">GET IN TOUCH</h1>
+          <h2 className="font-bold text-[25px] text-center">
+            Contact <span className="text-blue-300">Me</span>.
+          </h2>
 
           <br />
 
           <p className="text-center">
             I am currently open to full-time, contract or part-time
-            opportunities in Full Stack Web Development.
+            opportunities in Full Stack Development.
           </p>
 
           <br />
         </div>
 
-        <div className="flex justify-center bg-gray-950 text-white pb-7 md:pt-10 md:pb-[60px] px-3 text-[17px]">
+        <div className="flex justify-center bg-gray-950 text-white border-b-[1px] border-b-slate-700 pb-7 md:pt-10 md:pb-[60px] px-3 text-[17px]">
           <div className="sm:flex bg-gray-900 justify-center rounded-xl gap-4 py-5 md:px-[60px] w-full md:w-auto">
             <div className="p-3 min-w-0 max-w-[600px]">
               <p>Have an awesome project idea?</p>
@@ -71,7 +69,7 @@ const Contact = () => {
                   href="tel:+2348104348445"
                   className="text-[15px] text-blue-300 sm:text-[17px]"
                 >
-                  +234 810 434 8445
+                  +44 7405 228 644
                 </a>
               </div>
 
@@ -96,7 +94,7 @@ const Contact = () => {
                   <FaLocationDot />
                 </span>
                 <span className="text-[15px] sm:text-[17px]">
-                  Osogbo, Nigeria.
+                  Leicester, United Kingdom.
                 </span>
               </div>
             </div>
@@ -108,7 +106,7 @@ const Contact = () => {
               <input
                 type="text"
                 className="w-full px-3 py-1 bg-inherit border border-blue-400 rounded-lg outline-blue-500"
-                placeholder="Enter Name"
+                placeholder="Enter Full Name"
               />
               <br />
               <br />
@@ -116,7 +114,7 @@ const Contact = () => {
               <input
                 type="email"
                 className="w-full px-3 py-1 bg-inherit border border-blue-400 rounded-lg outline-blue-500"
-                placeholder="Enter Email"
+                placeholder="Enter Email Address"
               />
               <br />
               <br />
@@ -130,7 +128,7 @@ const Contact = () => {
               <br />
               <br />
               <button className="bg-inherit flex justify-center items-center gap-2 text-[17px] font-bold border hover:text-blue-400 hover:shadow-blue-300 hover:shadow-md active:text-blue-500 border-blue-400 text-blue-300 rounded-lg p-2">
-                <span>View Resume</span>
+                <span>Send Message</span>
                 <span>
                   <TfiBag />
                 </span>

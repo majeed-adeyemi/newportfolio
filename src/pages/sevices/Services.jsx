@@ -1,105 +1,125 @@
-import React from 'react'
+import React from "react";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { BiUserPin } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Services = () => {
+  // Define services data to reduce repetition in JSX
+  const services = [
+    {
+      id: 1,
+      icon: <AiOutlineFundProjectionScreen />,
+      title: "Portfolio & Props Account Management",
+      description:
+        "Crafting user-centric digital experiences that seamlessly blend aesthetics and functionality. Expert in user-centered design and responsive interfaces.",
+    },
+    {
+      id: 2,
+      icon: <FaLaptopCode />,
+      title: "Front-End Development",
+      description:
+        "Using various programming languages such as HTML5, CSS3, JAVASCRIPT, TAILWIND, REACT, NODE.JS, and EXPRESS.JS to build user-centered digital solutions.",
+    },
+    {
+      id: 3,
+      icon: <FaCode />,
+      title: "Back-End Development",
+      description:
+        "Building scalable and reliable server-side logic and databases for seamless user experiences.",
+    },
+    {
+      id: 4,
+      icon: <BiUserPin />,
+      title: "Full Stack Development",
+      description:
+        "Combining front-end and back-end skills to create end-to-end solutions and full-fledged applications Combining front-end and back-end skills -to-end solutions and full-fledged applications.",
+    },
+    {
+      id: 5,
+      icon: <BiUserPin />,
+      title: "UI Design",
+      description:
+        "Designing intuitive, user-friendly interfaces that provide a seamless and engaging experience.",
+    },
+    {
+      id: 6,
+      icon: <BiUserPin />,
+      title: "Free & Paid Mentorship",
+      description:
+        "Offering mentorship in the areas of development and design for aspiring developers.",
+    },
+  ];
+
   return (
     <section>
       <div
         id="services"
-        className="justify-items-center bg-gray-950 text-white pt-5 pb-7 md:pb-[60px] lg:pb-[80px] px-3"
+        className="justify-items-center bg-gray-950 text-white border-b-[1px] border-b-slate-700 pt-5 pb-7 md:pb-[60px] lg:pb-[80px] px-3"
       >
         <br />
-
         <h1 className="flex justify-center font-bold">SERVICES</h1>
         <div className="flex justify-center">
           <h2 className="font-bold text-[25px]">
-            What <span className="text-blue-300">I do</span>.
+            What <span className="text-blue-300">I do</span> .
           </h2>
         </div>
-
         <br />
-
         <div className="flex justify-center">
-          <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
-            <div className="shadow-blue-300 shadow-lg hover:shadow-blue-300 hover:shadow-2xl min-w-0 max-w-[350px] border-[1px] border-blue-400 bg-gray-800 p-3 rounded-lg text-[16px] leading-7 lg:text-[18px] lg:leading-[30px]">
-              <p className="text-[40px] text-neutral-500 font-semibold flex justify-end">
-                01
-              </p>
-              <p className="text-[38px] -mt-2">
-                <AiOutlineFundProjectionScreen />
-              </p>
-              <p className="font-bold py-3 text-[21px] text-blue-300">
-                Portfolio & Props Account Management
-              </p>
-              <p className="min-w-0 max-w-[250px] border-[1px] mt-1 mb-2"></p>
-              <p>
-                Crafting user coetric digital experiences that seamlessly blend
-                aesthetics and functionality. Expert in user-centered design and
-                responsive interfaces design and responsive interfaces.
-              </p>
-            </div>
-
-            <div className="shadow-blue-300 shadow-lg hover:shadow-blue-300 hover:shadow-2xl min-w-0 max-w-[350px] border-[1px] border-blue-400 bg-gray-800 p-3 rounded-lg text-[16px] leading-7 lg:text-[18px] lg:leading-[30px]">
-              <p className="text-[40px] text-neutral-500 font-semibold flex justify-end">
-                02
-              </p>
-              <p className="text-[38px] -mt-2">
-                <FaLaptopCode />
-              </p>
-              <p className="font-bold py-3 text-[21px] text-blue-300">
-                Front-End Web Development
-              </p>
-              <p className="min-w-0 max-w-[250px] border-[1px] mt-1 mb-2"></p>
-              <p>
-                I use my knowledge of various programming language such as
-                HTML5, CSS3, JAVASCRIPT, TAILWIND, REACT, NODE.JS and EXPRESS.JS
-                to build digital solutions for users.
-              </p>
-            </div>
-
-            <div className="shadow-blue-300 shadow-lg hover:shadow-blue-300 hover:shadow-2xl min-w-0 max-w-[350px] border-[1px] border-blue-400 bg-gray-800 p-3 rounded-lg text-[16px] leading-7 lg:text-[18px] lg:leading-[30px]">
-              <p className="text-[40px] text-neutral-500 font-semibold flex justify-end">
-                03
-              </p>
-              <p className="text-[38px] -mt-2">
-                <FaCode />
-              </p>
-              <p className="font-bold py-3 text-[21px] text-blue-300">
-                Back-End Web Development
-              </p>
-              <p className="min-w-0 max-w-[250px] border-[1px] mt-1 mb-2"></p>
-              <p>
-                Crafting user coetric digital experiences that seamlessly blend
-                aesthetics and functionality. Expert in user-centered design and
-                responsive interfaces design and responsive interfaces.
-              </p>
-            </div>
-
-            <div className="shadow-blue-300 shadow-lg hover:shadow-blue-300 hover:shadow-2xl min-w-0 max-w-[350px] border-[1px] border-blue-400 bg-gray-800 p-3 rounded-lg text-[16px] leading-7 lg:text-[18px] lg:leading-[30px]">
-              <p className="text-[40px] text-neutral-500 font-semibold flex justify-end">
-                04
-              </p>
-              <p className="text-[38px] -mt-2">
-                <BiUserPin />
-              </p>
-              <p className="font-bold py-3 text-[21px] text-blue-300">
-                UI Design
-              </p>
-              <p className="min-w-0 max-w-[250px] border-[1px] mt-1 mb-2"></p>
-              <p>
-                Crafting user coetric digital experiences that seamlessly blend
-                aesthetics and functionality. Expert in user-centered design and
-                responsive interfaces design and responsive interfaces.
-              </p>
-            </div>
+          <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={service.id}
+                id={service.id}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                delay={index * 0.2} // Delay to create staggered animation
+              />
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Services
+const ServiceCard = ({ id, icon, title, description, delay }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger only once when the card comes into view
+    threshold: 0.2, // When 20% of the section is in view
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="shadow-blue-300 shadow-lg hover:shadow-blue-300 hover:shadow-2xl min-w-0 max-w-[350px] border-[1px] border-blue-400 bg-gray-800 p-3 rounded-lg text-[16px] leading-7 lg:text-[18px] lg:leading-[30px]"
+      initial={{ opacity: 0, y: 100 }} // Initial state: off-screen from the bottom
+      animate={{
+        opacity: inView ? 1 : 0,
+        y: inView ? 0 : 100, // Moves to its original position when in view
+      }}
+      exit={{ opacity: 0, y: 100 }} // Moves out of the view when exiting
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 25,
+        delay, // Staggered delay per service
+        duration: 0.5,
+      }}
+    >
+      <p className="text-[40px] text-neutral-500 font-semibold flex justify-end">
+        {id < 10 ? `0${id}` : id}
+      </p>
+      <p className="text-[38px] -mt-2">{icon}</p>
+      <p className="font-bold py-3 text-[21px] text-blue-300">{title}</p>
+      <p className="min-w-0 max-w-[250px] border-[1px] mt-1 mb-2"></p>
+      <p>{description}</p>
+    </motion.div>
+  );
+};
+
+export default Services;
+

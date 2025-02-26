@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { TfiBag } from "react-icons/tfi";
-import Profilepic from "../../assets/pic1.jpg";
+import Profilepic from "../../assets/MyPic.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const About = () => {
       <section>
         <div
           id="about"
-          className="bg-gray-900 text-white pb-7 pt-5 md:pt-10 md:pb-[60px] px-3"
+          className="bg-gray-950 text-white border-b-[1px] border-b-slate-700 pb-7 pt-5 md:pt-10 md:pb-[60px] px-3"
           data-aos="fade-up" // Add AOS animation
         >
           <h1 className="flex justify-center font-bold">MY BIO</h1>

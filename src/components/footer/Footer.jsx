@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <section>
-        <div className="flex gap-2 flex-wrap justify-evenly bg-gray-900 text-white pt-5 pb-3 md:pb-[30px] px-3">
+        <div className="flex gap-2 flex-wrap justify-evenly bg-gray-950 border-b-[1px] border-b-slate-700 text-white pt-5 pb-3 md:pb-[30px] px-3">
           <a href="#">
             <h1 className="text-2xl text-blue-300 font-bold">
               Majeed Adeyemi<span className="text-white">.</span>
@@ -48,7 +48,7 @@ const Footer = () => {
 
             <br />
 
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-center">
               <li className="hover:underline hover:text-blue-300">
                 <a href="#pm">Portfoloio Manager</a>
               </li>
@@ -104,18 +104,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr />
+        {/* <hr /> */}
 
-        <div className=" flex justify-center items-center text-center pt-6 bg-gray-900 text-blue-300 text-[15px] font-bold">
+        <div className=" flex justify-center items-center text-center py-6 bg-gray-900 text-blue-300 text-[15px] font-bold">
           <p>
             <span className="text-white">Designed & Developed by</span>{" "}
             <span className="hover:underline active:text-blue-400">
               Majeed A. Adeyemi
             </span>
           </p>
-
-          <br />
-          <br />
         </div>
       </section>
     </>
