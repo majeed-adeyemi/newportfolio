@@ -67,9 +67,9 @@ const Home = () => {
 
       {/* Contact Section with a Bounce Effect */}
       <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 100 }}
+        initial={{ rotateY: 90, opacity: 0 }}
+        whileInView={{ rotateY: 0, opacity: 1 }}
+        transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
         <Contact />
