@@ -14,42 +14,42 @@ const Services = () => {
       icon: <AiOutlineFundProjectionScreen />,
       title: "Portfolio & Props Account Management",
       description:
-        "Crafting user-centric digital experiences that seamlessly blend aesthetics and functionality. Expert in user-centered design and responsive interfaces.",
+        "Professional portfolio and proprietary account management tailored to maximize returns, minimize risks, and strategically grow your wealth through data-driven insights and expert financial strategies.",
     },
     {
       id: 2,
       icon: <FaLaptopCode />,
       title: "Front-End Development",
       description:
-        "Using various programming languages such as HTML5, CSS3, JAVASCRIPT, TAILWIND, REACT, NODE.JS, and EXPRESS.JS to build user-centered digital solutions.",
+        "Transforming ideas into visually stunning, highly responsive, and user-friendly web interfaces using the latest front-end technologies, ensuring seamless navigation, optimal performance, and engaging user experience across all devices/platforms.",
     },
     {
       id: 3,
       icon: <FaCode />,
       title: "Back-End Development",
       description:
-        "Building scalable and reliable server-side logic and databases for seamless user experiences.",
+        "Building robust, scalable, and secure back-end systems that power web applications with efficient server-side logic, seamless database integration, and API development, ensuring high performance, and smooth interaction between front & back-end components.",
     },
     {
       id: 4,
       icon: <BiUserPin />,
       title: "Full Stack Development",
       description:
-        "Combining front-end and back-end skills to create end-to-end solutions and full-fledged applications Combining front-end and back-end skills -to-end solutions and full-fledged applications.",
+        "Providing end-to-end solutions by combining both front & back-end development expertise, delivering seamless user experiences and robust, scalable systems, with expertise in building and deploying complete web applications that are fully integrated.",
     },
     {
       id: 5,
       icon: <BiUserPin />,
       title: "UI Design",
       description:
-        "Designing intuitive, user-friendly interfaces that provide a seamless and engaging experience.",
+        "Crafting visually striking, user-centered UI designs that seamlessly blend creativity, functionality, and user experience, ensuring intuitive, engaging, and accessible digital interactions across all devices and platforms, while maintaining brand consistency.",
     },
     {
       id: 6,
       icon: <BiUserPin />,
-      title: "Free & Paid Mentorship",
+      title: "Mentorship",
       description:
-        "Offering mentorship in the areas of development and design for aspiring developers.",
+        "Offering mentorship programs tailored to help individuals and businesses unlock their full potential, with expert guidance, personalized support, and actionable insights that cater to various skill levels and goals, empowering mentees to excel in their careers.",
     },
   ];
 
@@ -63,7 +63,7 @@ const Services = () => {
         <h1 className="flex justify-center font-bold">SERVICES</h1>
         <div className="flex justify-center">
           <h2 className="font-bold text-[25px]">
-            What <span className="text-blue-300">I do</span> .
+            What <span className="text-blue-300">I do</span>.
           </h2>
         </div>
         <br />

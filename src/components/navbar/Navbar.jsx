@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MdCancel } from "react-icons/md";
 import { CgMenuRight } from "react-icons/cg";
-import { TfiBag } from "react-icons/tfi";
+import { IoCall } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -43,7 +43,9 @@ const Navbar = () => {
       } bg-gray-950 shadow-gray-700 shadow-lg transition-transform duration-300 z-50`}
     >
       <div className="text-white lg:pt-5 px-4 py-3 flex justify-between items-center lg:justify-around">
-        <Link to={"/"} className="text-xl z-50 font-bold">Majeed Adeyemi</Link>
+        <Link to={"/"} className="text-xl z-50 font-bold">
+          Majeed Adeyemi
+        </Link>
 
         {/* Hamburger Button */}
         <button
@@ -80,23 +82,23 @@ const Navbar = () => {
 
           {/* Mobile Resume Button */}
           <div className="block mt-4 lg:hidden">
-            <button className="bg-inherit flex justify-center items-center gap-2 text-[17px] font-bold border hover:text-blue-400 hover:shadow-blue-300 hover:shadow-md active:text-blue-500 border-blue-400 text-blue-300 rounded-lg p-2">
-              <span>View Resume</span>
+            <Link to={"/contact"} className="bg-inherit flex justify-center items-center gap-2 text-[17px] font-bold border hover:text-blue-400 hover:shadow-blue-300 hover:shadow-md active:text-blue-500 border-blue-400 text-blue-300 rounded-lg p-2">
+              <span>Book a Call</span>
               <span>
-                <TfiBag />
+                <IoCall />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Desktop Resume Button */}
         <div className="hidden lg:block md:mt-0">
-          <button className="bg-inherit flex justify-center items-center gap-2 text-[17px] font-bold border hover:text-blue-400 hover:shadow-blue-300 hover:shadow-md active:text-blue-500 border-blue-400 text-blue-300 rounded-lg p-2">
-            <span>View Resume</span>
+          <Link to={"/contact"} className="bg-inherit flex justify-center items-center gap-2 text-[17px] font-bold border hover:text-blue-400 hover:shadow-blue-300 hover:shadow-md active:text-blue-500 border-blue-400 text-blue-300 rounded-lg p-2">
+            <span>Book a Call</span>
             <span>
-              <TfiBag />
+              <IoCall />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
 

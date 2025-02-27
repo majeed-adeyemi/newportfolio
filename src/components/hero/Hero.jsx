@@ -79,7 +79,10 @@ const Hero = () => {
                 </span>
 
                 <span className="p-2 border-[1px] rounded-full hover:bg-blue-100 hover:border-red-600 hover:text-red-600">
-                  <a href="" className="active:bg-blue-300">
+                  <a
+                    href="https://www.instagram.com/majeedadeyemi_?igsh=MWp1emQweGdxeDN0aw%3D%3D&utm_source=qr"
+                    className="active:bg-blue-300"
+                  >
                     <FaInstagram />
                   </a>
                 </span>
@@ -92,9 +95,12 @@ const Hero = () => {
                     <FaLinkedin />
                   </a>
                 </span>
-                
+
                 <span className="p-2 border-[1px] rounded-full hover:bg-blue-100 active:bg-blue-300 hover:border-blue-100 hover:text-black">
-                  <a href="" className="active:bg-blue-300">
+                  <a
+                    href="https://x.com/majeedadeyemi_?s=21"
+                    className="active:bg-blue-300"
+                  >
                     <FaXTwitter />
                   </a>
                 </span>
