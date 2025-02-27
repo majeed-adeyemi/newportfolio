@@ -22,17 +22,32 @@ const Skills = () => {
       <section>
         <div className="flex justify-center bg-gray-950 text-white pt-8 pb-4 px-3">
           <div>
-            <div className="flex justify-center font-bold">
+            <motion.div
+              className="flex justify-center font-bold"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
               SKILLS
-            </div>
+            </motion.div>
 
-            <div className="flex justify-center">
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
               <h2 className="font-bold text-[25px]">
                 Technical <span className="text-blue-300">Skills</span>.
               </h2>
-            </div>
+            </motion.div>
 
-            <p className="min-w-0 max-w-[600px] leading-7 md:leading-8 text-center">
+            <motion.p
+              className="min-w-0 max-w-[600px] leading-7 md:leading-8 text-center"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
               laboriosam magnam, quasi ex pariatur non tempore earum explicabo
               repellendus corporis recusandae assumenda numquam possimus
@@ -43,7 +58,7 @@ const Skills = () => {
               obcaecati blanditiis tempore. Quos, hic voluptas assumenda earum
               porro a maxime tenetur? Ipsam nemo iusto minima dolorum animi nam
               sequi nesciunt.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div
@@ -54,7 +69,12 @@ const Skills = () => {
 
           <div className="flex justify-center">
             <div className="lg:flex lg:gap-2">
-              <div className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]">
+              <motion.div
+                className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+              >
                 <legend className="text-[22px] font-bold">
                   <span className="text-white">Front-End</span> Development
                   <span className="text-white">.</span>
@@ -62,7 +82,12 @@ const Skills = () => {
 
                 <br />
 
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+                <motion.div
+                  className="flex flex-wrap items-center gap-4 sm:gap-6"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                >
                   <div className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold">
                     <span className="text-white">HTML5</span>
                     <span className="text-[25px] text-orange-500 hover:text-blue-300">
@@ -125,12 +150,17 @@ const Skills = () => {
                       <FaNodeJs />
                     </span>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
 
               <br />
 
-              <div className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]">
+              <motion.div
+                className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+              >
                 <legend className="text-[22px] font-bold">
                   <span className="text-white">Back-End</span> Development
                   <span className="text-white">.</span>
@@ -138,7 +168,12 @@ const Skills = () => {
 
                 <br />
 
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+                <motion.div
+                  className="flex flex-wrap items-center gap-4 sm:gap-6"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+                >
                   <div className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold">
                     <span className="text-white">HTML5</span>
                     <span className="text-[25px] text-orange-500 hover:text-blue-300">
@@ -201,14 +236,19 @@ const Skills = () => {
                       <FaNodeJs />
                     </span>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center bg-gray-950 text-white border-b-[1px] border-b-slate-700 pb-7 pt-7 md:py-[40px] px-3 text-[17px]">
-          <div className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]">
+          <motion.div
+            className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             <legend className="text-[22px] font-bold">
               <span className="text-white">Portfolio</span> Management
               <span className="text-white">.</span>
@@ -216,7 +256,12 @@ const Skills = () => {
 
             <br />
 
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <motion.div
+              className="flex flex-wrap items-center gap-4 sm:gap-6"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
               <div className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold">
                 <span className="text-white text-[15px]">
                   ANALYTICAL SKILLS
@@ -262,8 +307,8 @@ const Skills = () => {
                   <FaMoneyBillTrendUp />
                 </span>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </>
@@ -271,182 +316,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FaHtml5 } from "react-icons/fa";
-// import { FaCss3 } from "react-icons/fa";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { SiJavascript } from "react-icons/si";
-// import { FaReact } from "react-icons/fa";
-// import { FaNodeJs } from "react-icons/fa";
-// import { BiUserPin } from "react-icons/bi";
-// import { DiMsqlServer } from "react-icons/di";
-// import { FaGithub } from "react-icons/fa";
-
-// const Skills = () => {
-//   return (
-//     <>
-//       <section>
-//         <div className="flex justify-center bg-gray-950 text-white pt-8 pb-4 px-3">
-//           <div>
-//             <h1 className="flex justify-center font-bold">SKILLS</h1>
-
-//             <div className="flex justify-center">
-//               <h2 className="font-bold text-[25px]">
-//                 Technical <span className="text-blue-300">Skills</span>.
-//               </h2>
-//             </div>
-
-//             <p className="min-w-0 max-w-[600px] leading-7 md:leading-8 text-center">
-//               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-//               laboriosam magnam, quasi ex pariatur non tempore earum explicabo
-//               repellendus corporis recusandae assumenda numquam possimus
-//               perspiciatis.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div
-//           id="skills"
-//           className="xl:flex justify-center lg:gap-5 bg-gray-950 text-white pt-5 md:pt-8 px-3 text-[17px]"
-//         >
-//           <div className="flex justify-center">
-//             <div className="lg:flex lg:gap-2">
-//               <motion.div
-//                 className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]"
-//                 initial={{ opacity: 0, y: 50 }}
-//                 animate={{ opacity: 1, y: 0 }}
-//                 transition={{ duration: 1, ease: "easeOut" }}
-//               >
-//                 <legend className="text-[22px] font-bold">
-//                   <span className="text-white">Front-End</span> Development
-//                 </legend>
-
-//                 <br />
-
-//                 <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-//                   >
-//                     <span className="text-white">HTML5</span>
-//                     <span className="text-[25px] text-orange-500 hover:text-blue-300">
-//                       <FaHtml5 />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-//                   >
-//                     <span className="text-white">CSS3</span>
-//                     <span className="text-[25px] text-blue-500 hover:text-blue-300">
-//                       <FaCss3 />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-//                   >
-//                     <span className="text-white">TAILWIND</span>
-//                     <span className="text-[25px] text-green-300 hover:text-blue-300">
-//                       <RiTailwindCssFill />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-//                   >
-//                     <span className="text-white">REACT</span>
-//                     <span className="text-[25px] text-blue-200 hover:text-blue-300">
-//                       <FaReact />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 1 }}
-//                   >
-//                     <span className="text-white">JAVASCRIPT</span>
-//                     <span className="text-[23px] text-yellow-400 hover:text-blue-300">
-//                       <SiJavascript />
-//                     </span>
-//                   </motion.div>
-//                 </div>
-//               </motion.div>
-
-//               <br />
-
-//               <motion.div
-//                 className="items-center border hover:border-blue-400 hover:text-blue-300 rounded-2xl p-3 min-w-0 max-w-[550px]"
-//                 initial={{ opacity: 0, y: 50 }}
-//                 animate={{ opacity: 1, y: 0 }}
-//                 transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
-//               >
-//                 <legend className="text-[22px] font-bold">
-//                   <span className="text-white">Back-End</span> Development
-//                 </legend>
-
-//                 <br />
-
-//                 <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 1.4 }}
-//                   >
-//                     <span className="text-white">NODE-JS</span>
-//                     <span className="text-[25px] text-green-400 hover:text-blue-300">
-//                       <FaNodeJs />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 1.6 }}
-//                   >
-//                     <span className="text-white">GIT</span>
-//                     <span className="text-[25px] text-white hover:text-blue-300">
-//                       <FaGithub />
-//                     </span>
-//                   </motion.div>
-
-//                   <motion.div
-//                     className="flex justify-center items-center gap-1 border-[2px] border-blue-300 rounded-full p-3 sm:p-7 h-[50px] font-semibold"
-//                     initial={{ opacity: 0, x: -50 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 1, ease: "easeOut", delay: 1.8 }}
-//                   >
-//                     <span className="text-white">MySQL</span>
-//                     <span className="text-[27px] text-orange-400 hover:text-blue-300">
-//                       <DiMsqlServer />
-//                     </span>
-//                   </motion.div>
-//                 </div>
-//               </motion.div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-
-// export default Skills;
