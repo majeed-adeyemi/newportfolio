@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -11,7 +11,7 @@ import Skills from "./pages/skills/Skills";
 export default function App() {
   return (
     <>
-      <BrowserRouter
+      <HashRouter
         future={{
           v7_startTransition: true,
         }}
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
